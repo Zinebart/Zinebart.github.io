@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-    // Select size input
+    
     
         $('#sizePicker').submit(function() {
             return false;
@@ -18,10 +17,9 @@ $(document).ready(function(){
                 makeGrid(height, width)
             }
         });
+        
     
-    // When size is submitted by the user, call makeGrid()
-    
-    
+
         $('#button_reset').on('click', function() {
             if (height && width) {
                 makeGrid(height, width)
@@ -39,9 +37,8 @@ $(document).ready(function(){
             }
         }
     
-    
-    // Select color input    
-    
+
+        
         let color = $('#colorPicker');
     
         $(document).on("mousedown", "tr td", function () {
@@ -54,7 +51,7 @@ $(document).ready(function(){
                 $('td').unbind('mousemove');
             });
             $('tr td').on('dblclick',function () {
-                $(this).css('background-color', "#FFFFFF")
+                $(this).css('background-color', "white")
             })
         });
     });
