@@ -43,7 +43,6 @@ body {
     width: 100%;
     transform: translate(-50%, -50%);
     padding: 0 10px 0 10px;
-
 }
 
 #sizePicker > *,
@@ -90,19 +89,18 @@ input {
 input[type="number"]{
     padding: 2px;
 } 
+
 input[type="submit"] {
     padding: 5px;
     border: 3px;
     width: 65%;
     margin-bottom: 1px!important;
-
 }
 #button_reset {
     padding: 5px;
     border: 3px;
     width: 65%;
 }
-
 
 .canvas-container {
     background-color: lightgrey;
@@ -140,6 +138,7 @@ tr {
 td {
     width: 13px;
 }
+
 
 
 
@@ -224,8 +223,7 @@ td {
 
     input[type="color"] {
         width: 50%;
-        margin: 0 0 10px 0!important;
-        
+        margin: 0 0 10px 0!important; 
     }
 
     table,
