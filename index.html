@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Pixel Art Maker!</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">    
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">    
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--<header>
-        <h1>Lab: Pixel Art Maker</h1>
-    </header>-->
 
     <div class="wrapper">
+
         <div class="tools-container">
-            <div class="tools-container-items">
-                
-                <img src="images/Artboard-2x.png"
-                alt="Pixel Art Maker Logo">
+            <div class="tools-container-items"> 
+                <img src="images/Artboard-2x.png" alt="Pixel Art Maker Logo">
 
                 <h2><span>Choose Grid Size</span></h2>
 
                 <form id="sizePicker">
-                    <!--<label for="input_height">Grid Height:</label>-->
                     <input type="number" id="input_height" name="height" min="1" max="60" placeholder="Grid Height" required>
-                    <!--<label for="input_width">Grid Width:</label>-->
                     <input type="number" id="input_width" name="width" min="1" max="80" placeholder="Grid Width" required>
                     <input type="submit" id="button_submit" name="submit" value="Apply">
                 </form>
 
-                <button id="button_reset" value= "Reset">Reset</button>
+                <button id="button_reset" value= "Reset">Clear</button>
                 
                 <h2><span>Pick A Color</span></h2>
-                <input type="color" id="colorPicker" value="#FFCC01">
-                <h6>*Double click to erase.</h6>
 
+                <input type="color" id="colorPicker" value="#ffcc01">
+
+                <h6>*Double click to erase.</h6>
             </div>
         </div>
 
