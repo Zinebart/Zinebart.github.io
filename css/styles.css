@@ -1,9 +1,17 @@
+/*---------------
+    - W3Schools: https://www.w3schools.com/css/default.asp
+    - MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Basic_rule_syntax
+----------------*/
+
+
+/*-- General element style --*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*-- General web page style --*/
 html, body {
     height: 100%;
 }
@@ -14,6 +22,7 @@ body {
     font-size: 0.9em;
 }
 
+/*-- Web page content wrapper --*/
 .wrapper {
     height: 100%;
     position: relative;
@@ -24,6 +33,7 @@ body {
     padding: 10px;
 }
 
+/*-- Left panel container --*/
 .tools-container {
     background: #141E30;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #141E30, #243B55);  /* Chrome 10-25, Safari 5.1-6 */
@@ -36,6 +46,7 @@ body {
     width: 20%;
 }
 
+/*-- Left panel container items --*/
 .tools-container-items {
     position: absolute;
     left: 50%;
@@ -45,21 +56,29 @@ body {
     padding: 0 10px 0 10px;
 }
 
+/*-- Content wrapper and size picker's elements --*/
 #sizePicker > *,
 .tools-container-items > * {
     margin-bottom: 15px;
 }
 
+/*-- Web page logo --*/
 img {
     width: 100%;
     height: auto;
 }
 
+/*-- Form labels style --*/
 h2 {
     font-size: 1em;
     overflow: hidden;
 }
 
+h2:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+/*-- Form labels centered line-splitting style --*/
 h2:before,
 h2:after {
   background-color: white;
@@ -81,27 +100,40 @@ h2:after {
   margin-right: -50%;
 }
 
+/*-- Form input elements and button --*/
 input {
     width: 65%;
     text-align: center;
 }
 
-input[type="number"]{
+input[type="number"],
+input[type="submit"],
+#button_clear {
+    border-radius: 2px;
+}
+
+input[type="number"] {
     padding: 2px;
 } 
 
-input[type="submit"] {
+input[type="submit"],
+#button_clear {
+    background-color: #FFCB46;
     padding: 5px;
+    border: 3px;
+}
+
+input[type="submit"] {
     border: 3px;
     width: 65%;
     margin-bottom: 1px!important;
 }
+
 #button_clear {
-    padding: 5px;
-    border: 3px;
     width: 65%;
 }
 
+/*-- Right panel container items --*/
 .canvas-container {
     background-color: lightgrey;
     align-items: center;
@@ -114,6 +146,7 @@ input[type="submit"] {
     width: 80%;
 }
 
+/*-- Right panel table (grid) style --*/
 table,
 tr,
 td {
@@ -139,7 +172,10 @@ td {
     width: 13px;
 }
 
+/*-- Media Query for screens (browser windows) smaller than 680px --*/
 @media screen and (max-width: 680px) {
+
+    /*-- Left panel container --*/
     .tools-container {
         text-align: center;
         position: relative;
@@ -149,7 +185,8 @@ td {
         bottom: unset;
         right: unset;
     }
-    
+
+    /*-- Left panel container items --*/
     .tools-container-items {
         position: relative;
         width: 100%;
@@ -161,6 +198,60 @@ td {
         right: unset;
     }
 
+    /*-- Content wrapper and size picker's elements --*/
+    #sizePicker > *,
+    .tools-container-items > * {
+        margin-bottom: unset;
+    }
+
+    /*-- Web page logo --*/
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    /*-- Form labels style --*/
+    h2 {
+        font-size: 1em;
+        margin-bottom: 10px!important;
+    }
+
+    h2:nth-of-type(2) {
+        margin-bottom: 5px!important;
+    }
+
+    /*-- Form input elements and button --*/
+    input {
+        display: unset;
+        width: 50%;
+        text-align: center;
+    }
+
+    input[type="number"] {
+        width: 40%;
+        padding: 2px;
+        margin: 0 5% 0 5%;
+    }
+
+    input[type="submit"],
+    #button_clear {
+        margin: 10px 5% 10px 5%!important;
+        width: 40%;
+        padding: 3px;
+        border: 4px;
+    }
+
+    input[type="submit"],
+    #input_height {
+        float: left;
+    }
+
+    input[type="color"] {
+        width: 50%;
+        margin: 0 0 5px 0!important; 
+    }
+
+    /*-- Right panel container items --*/
     .canvas-container {
         align-items: center;
         justify-content: center;
@@ -174,53 +265,7 @@ td {
         overflow-y: auto;
     }
 
-    #sizePicker > *,
-    .tools-container-items > * {
-        margin-bottom: unset;
-    }
-
-    img {
-        width: 50%;
-        height: auto;
-    }
-    h2 {
-        font-size: 1em;
-        margin-bottom: 10px!important;
-    }
-
-
-    input {
-        display: unset;
-        width: 50%;
-        text-align: center;
-    }
-
-    input[type="number"] {
-        width: 40%;
-        padding: 2px;
-        margin: 0 5% 0 5%;
-    }
-
-    #input_height {
-        float: left;
-    }
-
-    input[type="submit"], #button_clear {
-        margin: 10px 5% 10px 5%!important;
-        width: 40%;
-        padding: 3px;
-        border: 4px;
-    }
-
-    input[type="submit"] {
-        float: left;
-    }
-
-    input[type="color"] {
-        width: 50%;
-        margin: 0 0 10px 0!important; 
-    }
-
+    /*-- Right panel table (grid) style --*/
     table,
     tr,
     td {
