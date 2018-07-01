@@ -4,24 +4,24 @@
     <!-- Define character encoding and give the browser instructions on how to control the page's dimensions and scaling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Header address bar color change on Chrome, Firefox OS and Opera for mobile devices -->
+    <!-- Header and address bar color change on mobile devices -->
     <meta name="theme-color" content="#243B55">
-    <!-- Define title of the document -->
+    <!-- Define title of the web page -->
     <title>Pixel Art Maker!</title>
     <!-- Style sheet files -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">    
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- Make wrapper for document content -->
+    <!-- Make wrapper for web page panels -->
     <div class="wrapper">
-    <!-- First container for the left side of the document -->
+      <!-- Left panel container -->
       <div class="tools-container">
         <div class="tools-container-items"> 
-          <!-- Document logo -->
+          <!-- Web page logo -->
           <img src="images/Artboard-2x.png" alt="Pixel Art Maker Logo">
           <!-- First form label -->
-          <h2><span>Choose Grid Size</span></h2>
+          <h2>Choose Grid Size</h2>
           <!-- Grid form -->
           <form id="sizePicker">
             <input type="number" id="input_height" name="height" min="1" placeholder="Grid Height" required>
@@ -31,20 +31,22 @@
           <!-- Clear grid button -->
           <button id="button_clear" value= "Clear">Clear</button>
           <!-- Second form label -->
-          <h2><span>Pick A Color</span></h2>
+          <h2>Pick A Color</h2>
           <!-- Color picker -->
-          <input type="color" id="colorPicker" value="#ffcc01">
+          <input type="color" id="colorPicker" value="#e40613">
           <!-- Single cell erase note -->
           <h6>*Double click to erase a single pixel.</h6>
         </div>
       </div>
-    <!-- Second container for the right side of the document -->
-    <div class="canvas-container">
+      <!-- Right panel container -->
+      <div class="canvas-container">
+        <!-- Right panel table (grid) -->
         <table id="pixel_canvas"></table>
       </div>
     </div>
     <!-- Style sheet files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/designs.js"></script>
+    
   </body>
 </html>
