@@ -1,8 +1,10 @@
-    // References used:
-    // * jQuery API: https://api.jquery.com/
-    // * JavaScript Math Reference: https://www.w3schools.com/jsref/jsref_obj_math.asp
-    // * jQuery Event Methods: https://www.w3schools.com/Jquery/jquery_ref_events.asp
-    // * jQuery HTML / CSS Methods: https://www.w3schools.com/Jquery/jquery_ref_html.asp
+    /*---------------
+    References used:
+        - jQuery API: https://api.jquery.com/
+        - JavaScript Math Reference: https://www.w3schools.com/jsref/jsref_obj_math.asp
+        - jQuery Event Methods: https://www.w3schools.com/Jquery/jquery_ref_events.asp
+        - jQuery HTML / CSS Methods: https://www.w3schools.com/Jquery/jquery_ref_html.asp
+    ----------------*/    
 
     $(document).ready(function(){
         // Calculate max grid width from current window width
