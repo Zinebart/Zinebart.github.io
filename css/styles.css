@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*-- General web page style --*/
 html, body {
     height: 100%;
@@ -17,6 +18,7 @@ body {
     color: lightgray;
     font-size: 0.9em;
 }
+
 /*-- Web page content wrapper --*/
 .wrapper {
     height: 100%;
@@ -25,6 +27,7 @@ body {
 .wrapper > * {
     padding: 10px;
 }
+
 /*-- Left panel container --*/
 .tools-container {
     background: #141E30;  /* fallback for old browsers */
@@ -37,6 +40,7 @@ body {
     bottom: 0;
     width: 20%;
 }
+
 /*-- Left panel container items --*/
 .tools-container-items {
     position: absolute;
@@ -46,16 +50,19 @@ body {
     transform: translate(-50%, -50%);
     padding: 0 10px 0 10px;
 }
+
 /*-- Content wrapper and size picker's elements --*/
 #sizePicker > *,
 .tools-container-items > * {
     margin-bottom: 15px;
 }
+
 /*-- Web page logo --*/
 img {
     width: 100%;
     height: auto;
 }
+
 /*-- Form labels style --*/
 h2 {
     font-size: 1em;
@@ -83,6 +90,7 @@ h2:after {
   left: 0.5em;
   margin-right: -50%;
 }
+
 /*-- Form input elements and button --*/
 input {
     width: 65%;
@@ -98,7 +106,7 @@ input[type="number"] {
 } 
 input[type="submit"],
 #button_clear {
-    background-color: #FFCB46;
+    background-color: rgb(204, 204, 202);
     padding: 5px;
     border: 3px;
 }
@@ -110,6 +118,7 @@ input[type="submit"] {
 #button_clear {
     width: 65%;
 }
+
 /*-- Right panel container items --*/
 .canvas-container {
     background-color: lightgrey;
@@ -122,6 +131,7 @@ input[type="submit"] {
     bottom: 0;
     width: 80%;
 }
+
 /*-- Right panel table (grid) style --*/
 table,
 tr,
@@ -144,6 +154,8 @@ tr {
 td {
     width: 13px;
 }
+
+
 /*-- Media Query for screens (browser windows) smaller than 680px --*/
 @media screen and (max-width: 680px) {
     /*-- Left panel container --*/
@@ -156,6 +168,7 @@ td {
         bottom: unset;
         right: unset;
     }
+
     /*-- Left panel container items --*/
     .tools-container-items {
         position: relative;
@@ -167,16 +180,19 @@ td {
         bottom: unset;
         right: unset;
     }
+
     /*-- Content wrapper and size picker's elements --*/
     #sizePicker > *,
     .tools-container-items > * {
         margin-bottom: unset;
     }
+
     /*-- Web page logo --*/
     img {
         width: 50%;
         height: auto;
     }
+
     /*-- Form labels style --*/
     h2 {
         font-size: 1em;
@@ -185,6 +201,7 @@ td {
     h2:nth-of-type(2) {
         margin-bottom: 5px!important;
     }
+
     /*-- Form input elements and button --*/
     input {
         display: unset;
@@ -211,6 +228,7 @@ td {
         width: 50%;
         margin: 0 0 5px 0!important; 
     }
+
     /*-- Right panel container items --*/
     .canvas-container {
         align-items: center;
@@ -224,6 +242,7 @@ td {
         height: 100%;
         overflow-y: auto;
     }
+
     /*-- Right panel table (grid) style --*/
     table,
     tr,

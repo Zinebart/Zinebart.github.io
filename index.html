@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Header and address bar color change on mobile devices -->
     <meta name="theme-color" content="#243B55">
+
     <!-- Define title of the web page -->
     <title>Pixel Art Maker!</title>
+
     <!-- Style sheet files -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">    
     <link rel="stylesheet" href="css/styles.css">
@@ -18,6 +20,7 @@
       <!-- Left panel container -->
       <div class="tools-container">
         <div class="tools-container-items"> 
+
           <!-- Web page logo -->
           <img src="images/Artboard-2x.png" alt="Pixel Art Maker Logo">
           <!-- First form label -->
@@ -28,22 +31,26 @@
             <input type="number" id="input_width" name="width" min="1" placeholder="Grid Width" required>
             <input type="submit" id="button_submit" name="submit" value="Apply">
           </form>
+
           <!-- Clear grid button -->
           <button id="button_clear" value= "Clear">Clear</button>
+
           <!-- Second form label -->
           <h2>Pick A Color</h2>
           <!-- Color picker -->
-          <input type="color" id="colorPicker" value="#e40613">
+          <input type="color" id="colorPicker" value="#ffcb46">
           <!-- Single cell erase note -->
           <h6>*Double click to erase a single pixel.</h6>
         </div>
       </div>
+
       <!-- Right panel container -->
       <div class="canvas-container">
         <!-- Right panel table (grid) -->
         <table id="pixel_canvas"></table>
       </div>
     </div>
+
     <!-- Style sheet files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/designs.js"></script>

@@ -5,6 +5,7 @@ References used:
     - jQuery Event Methods: https://www.w3schools.com/Jquery/jquery_ref_events.asp
     - jQuery HTML / CSS Methods: https://www.w3schools.com/Jquery/jquery_ref_html.asp
 ----------------*/    
+
 $(document).ready(function(){
     // Calculate max grid width from current window width
     // and recalculate on window resize
@@ -18,15 +19,18 @@ $(document).ready(function(){
         max_width = Math.floor(window_width * width_percent / 13);
         $('#input_width').attr({'max': max_width});
     });
+
     $(window).resize();
     // Set the default height and width and make the initial grid
     let height = 25;
     let width = Math.floor(max_width / 1.25);
     makeGrid();
+    
     // Prevent form submission to stop page refresh
     $('#sizePicker').submit(function() {
         return false;
     });
+    
     // Bind a click event on the form submit button
     $('#button_submit').click(function() {
         // Grab the height and width input values
@@ -38,11 +42,13 @@ $(document).ready(function(){
             makeGrid();
         }
     });
+    
     // Bind a click event on the Clear button
     $('#button_clear').on('click', function() {
         // Clear the color of all grid cells
         $('td').css('background-color', "white");
     });
+    
     // Define makeGrid() function that creates grid cells
     function makeGrid() {
         // Empty the canvas
@@ -59,6 +65,7 @@ $(document).ready(function(){
             $('#pixel_canvas').append('<tr>' + gridColumns + '</tr>');
         }
     }
+    
     $('#pixel_canvas').on("mousedown", "tr td", function () {
         // Grab the selected color
         let paintColor = $('#colorPicker').val();
@@ -72,6 +79,7 @@ $(document).ready(function(){
             $('td').unbind('mousemove');
         });
     });
+
     // Removes color from cell upon double-click
     $('tr td').on('dblclick',function () {
         $(this).css('background-color', "white");
