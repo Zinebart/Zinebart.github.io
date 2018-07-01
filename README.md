@@ -1,5 +1,5 @@
 # Pixel Art Maker Project
 
-## Link to my published page:
+## Link to the published page:
 
     https://zinebart.github.io/
