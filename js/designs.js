@@ -64,6 +64,10 @@ $(document).ready(function(){
             // Add new row to the grid at the end of each outer loop
             $('#pixel_canvas').append('<tr>' + gridColumns + '</tr>');
         }
+        // Removes color from cell upon double-click
+        $('tr td').on('dblclick',function () {
+            $(this).css('background-color', "white");
+        });
     }
     
     $('#pixel_canvas').on("mousedown", "tr td", function () {
@@ -79,9 +83,5 @@ $(document).ready(function(){
             $('td').unbind('mousemove');
         });
     });
-
-    // Removes color from cell upon double-click
-    $('tr td').on('dblclick',function () {
-        $(this).css('background-color', "white");
-    });
+    
 });
